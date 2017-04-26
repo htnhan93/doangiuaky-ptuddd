@@ -10,7 +10,9 @@ import UIKit
 
 class TableViewControllerMain: UITableViewController {
 
-   
+    var number = 10
+    
+    var lst_BA = [BanAn]()
     @IBOutlet weak var btnQL: UIBarButtonItem!
        override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,8 +20,12 @@ class TableViewControllerMain: UITableViewController {
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // Uncomment the following line to display an Edit button in thfe navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        if Utils.database == nil {
+            Utils.databaseSetup()
+        }
+        lst_BA=BanAn.selectAll() as! [BanAn]
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,16 +42,18 @@ class TableViewControllerMain: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return lst_BA.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCellBA", for: indexPath) as! TableViewCellBA
 
-        // Configure the cell...
-        cell.ImgBA.image=UIImage(named: "../Image/img1")
-        cell.lblSoBan.text="10"
+        // Configure the cell..	.
+        let ba = lst_BA[indexPath.row]
+        //cell.lblSoBan.text=ba.soBan.
+        cell.lblKV.text=ba.khuVuc
+        cell.lblTT.text=ba.thongTin
         return cell
     }
     

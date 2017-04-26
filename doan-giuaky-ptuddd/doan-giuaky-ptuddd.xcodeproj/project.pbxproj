@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1100038C1EB089CC00379CC9 /* BanAn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1100038B1EB089CC00379CC9 /* BanAn.swift */; };
 		112A30ED1EA9B0AE008652AE /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 112A30EC1EA9B0AE008652AE /* img1.jpg */; };
+		119ABA9B1EB04A1700386C5E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 119ABA9A1EB04A1700386C5E /* libsqlite3.0.tbd */; };
+		119ABA9D1EB04CDC00386C5E /* QLQA.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 119ABA9C1EB04CDC00386C5E /* QLQA.sqlite */; };
+		119ABAA01EB04D6500386C5E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119ABA9F1EB04D6500386C5E /* Utils.swift */; };
 		11EE42691EAA625000A88487 /* TableViewCellBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EE42681EAA625000A88487 /* TableViewCellBA.swift */; };
 		11EE426B1EAA627000A88487 /* TableViewControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EE426A1EAA627000A88487 /* TableViewControllerMain.swift */; };
 		11EE426F1EAA7E1000A88487 /* ViewControllerQuanLy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EE426E1EAA7E1000A88487 /* ViewControllerQuanLy.swift */; };
 		11EE42711EAA869E00A88487 /* ViewControllerBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EE42701EAA869E00A88487 /* ViewControllerBA.swift */; };
+		2EEB814FB6B26695BA6E0986 /* Pods_doan_giuaky_ptuddd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F681B07647FC0B30F987C6 /* Pods_doan_giuaky_ptuddd.framework */; };
 		B47DCB2C1EA5205C00F783F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47DCB2B1EA5205C00F783F2 /* AppDelegate.swift */; };
 		B47DCB2E1EA5205C00F783F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47DCB2D1EA5205C00F783F2 /* ViewController.swift */; };
 		B47DCB311EA5205C00F783F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47DCB2F1EA5205C00F783F2 /* Main.storyboard */; };
@@ -31,11 +36,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1100038B1EB089CC00379CC9 /* BanAn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanAn.swift; sourceTree = "<group>"; };
 		112A30EC1EA9B0AE008652AE /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
+		119ABA9A1EB04A1700386C5E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		119ABA9C1EB04CDC00386C5E /* QLQA.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = QLQA.sqlite; sourceTree = "<group>"; };
+		119ABA9F1EB04D6500386C5E /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		11EE42681EAA625000A88487 /* TableViewCellBA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellBA.swift; sourceTree = "<group>"; };
 		11EE426A1EAA627000A88487 /* TableViewControllerMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerMain.swift; sourceTree = "<group>"; };
 		11EE426E1EAA7E1000A88487 /* ViewControllerQuanLy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerQuanLy.swift; sourceTree = "<group>"; };
 		11EE42701EAA869E00A88487 /* ViewControllerBA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerBA.swift; sourceTree = "<group>"; };
+		7D792CDD9672E3CD742C3D60 /* Pods-doan-giuaky-ptuddd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doan-giuaky-ptuddd.release.xcconfig"; path = "Pods/Target Support Files/Pods-doan-giuaky-ptuddd/Pods-doan-giuaky-ptuddd.release.xcconfig"; sourceTree = "<group>"; };
+		A8F681B07647FC0B30F987C6 /* Pods_doan_giuaky_ptuddd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_doan_giuaky_ptuddd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47DCB281EA5205C00F783F2 /* doan-giuaky-ptuddd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "doan-giuaky-ptuddd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47DCB2B1EA5205C00F783F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B47DCB2D1EA5205C00F783F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +57,7 @@
 		B47DCB3C1EA5205C00F783F2 /* doan-giuaky-ptudddUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "doan-giuaky-ptudddUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47DCB401EA5205C00F783F2 /* doan_giuaky_ptudddUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doan_giuaky_ptudddUITests.swift; sourceTree = "<group>"; };
 		B47DCB421EA5205C00F783F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC687B817FA1321321ED5A40 /* Pods-doan-giuaky-ptuddd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doan-giuaky-ptuddd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doan-giuaky-ptuddd/Pods-doan-giuaky-ptuddd.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119ABA9B1EB04A1700386C5E /* libsqlite3.0.tbd in Frameworks */,
+				2EEB814FB6B26695BA6E0986 /* Pods_doan_giuaky_ptuddd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,14 +99,45 @@
 			name = Image;
 			sourceTree = "<group>";
 		};
+		119ABA991EB04A1600386C5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				119ABA9A1EB04A1700386C5E /* libsqlite3.0.tbd */,
+				A8F681B07647FC0B30F987C6 /* Pods_doan_giuaky_ptuddd.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		119ABA9E1EB04CFF00386C5E /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				119ABA9C1EB04CDC00386C5E /* QLQA.sqlite */,
+				119ABA9F1EB04D6500386C5E /* Utils.swift */,
+				1100038B1EB089CC00379CC9 /* BanAn.swift */,
+			);
+			name = Global;
+			sourceTree = "<group>";
+		};
+		73AA06AAF9382BF68B30B19A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC687B817FA1321321ED5A40 /* Pods-doan-giuaky-ptuddd.debug.xcconfig */,
+				7D792CDD9672E3CD742C3D60 /* Pods-doan-giuaky-ptuddd.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B47DCB1F1EA5205C00F783F2 = {
 			isa = PBXGroup;
 			children = (
+				119ABA9E1EB04CFF00386C5E /* Global */,
 				112A30EB1EA9AFF5008652AE /* Image */,
 				112A30E41EA9A867008652AE /* Controller */,
 				B47DCB2A1EA5205C00F783F2 /* doan-giuaky-ptuddd */,
 				B47DCB3F1EA5205C00F783F2 /* doan-giuaky-ptudddUITests */,
 				B47DCB291EA5205C00F783F2 /* Products */,
+				119ABA991EB04A1600386C5E /* Frameworks */,
+				73AA06AAF9382BF68B30B19A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B47DCB451EA5205C00F783F2 /* Build configuration list for PBXNativeTarget "doan-giuaky-ptuddd" */;
 			buildPhases = (
+				EFF812E05BB0A07E92657E64 /* [CP] Check Pods Manifest.lock */,
 				B47DCB241EA5205C00F783F2 /* Sources */,
 				B47DCB251EA5205C00F783F2 /* Frameworks */,
 				B47DCB261EA5205C00F783F2 /* Resources */,
+				CCEF87778A3BDE5D43A1C20A /* [CP] Embed Pods Frameworks */,
+				DBA187B6BA7E6EC4E0AED558 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119ABA9D1EB04CDC00386C5E /* QLQA.sqlite in Resources */,
 				B47DCB361EA5205C00F783F2 /* LaunchScreen.storyboard in Resources */,
 				112A30ED1EA9B0AE008652AE /* img1.jpg in Resources */,
 				B47DCB331EA5205C00F783F2 /* Assets.xcassets in Resources */,
@@ -226,6 +275,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CCEF87778A3BDE5D43A1C20A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-doan-giuaky-ptuddd/Pods-doan-giuaky-ptuddd-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBA187B6BA7E6EC4E0AED558 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-doan-giuaky-ptuddd/Pods-doan-giuaky-ptuddd-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFF812E05BB0A07E92657E64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B47DCB241EA5205C00F783F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -234,8 +331,10 @@
 				11EE426B1EAA627000A88487 /* TableViewControllerMain.swift in Sources */,
 				B47DCB2E1EA5205C00F783F2 /* ViewController.swift in Sources */,
 				11EE426F1EAA7E1000A88487 /* ViewControllerQuanLy.swift in Sources */,
+				119ABAA01EB04D6500386C5E /* Utils.swift in Sources */,
 				B47DCB2C1EA5205C00F783F2 /* AppDelegate.swift in Sources */,
 				11EE42691EAA625000A88487 /* TableViewCellBA.swift in Sources */,
+				1100038C1EB089CC00379CC9 /* BanAn.swift in Sources */,
 				11EE42711EAA869E00A88487 /* ViewControllerBA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +470,7 @@
 		};
 		B47DCB461EA5205C00F783F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC687B817FA1321321ED5A40 /* Pods-doan-giuaky-ptuddd.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "doan-giuaky-ptuddd/Info.plist";
@@ -383,6 +483,7 @@
 		};
 		B47DCB471EA5205C00F783F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D792CDD9672E3CD742C3D60 /* Pods-doan-giuaky-ptuddd.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "doan-giuaky-ptuddd/Info.plist";
