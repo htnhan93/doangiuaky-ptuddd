@@ -1,31 +1,29 @@
 //
-//  TableViewControllerMain.swift
+//  TableViewControllerKV.swift
 //  doan-giuaky-ptuddd
 //
-//  Created by Nguyen Nhan on 4/21/17.
+//  Created by Nguyen Nhan on 4/27/17.
 //  Copyright © 2017 Huynh Thanh Nhan. All rights reserved.
 //
 
 import UIKit
 
-class TableViewControllerMain: UITableViewController {
+class TableViewControllerKV: UITableViewController {
 
-    //var number = 10
-    
-    var lst_BA = [BanAn]()
-    @IBOutlet weak var btnQL: UIBarButtonItem!
+        var lst_KV = [KhuVuc]()
        override func viewDidLoad() {
         super.viewDidLoad()
-        title="DANH SÁCH BÀN ĂN"
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
-        // Uncomment the following line to display an Edit button in thfe navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+         self.navigationItem.rightBarButtonItem = self.editButtonItem
         if Utils.database == nil {
             Utils.databaseSetup()
         }
-        lst_BA=BanAn.selectAll() as! [BanAn]
+        lst_KV=KhuVuc.selectAll() as! [KhuVuc]
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,43 +40,44 @@ class TableViewControllerMain: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return lst_BA.count
+        return lst_KV.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCellBA", for: indexPath) as! TableViewCellBA
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCellKV
 
-        // Configure the cell..	.
-        let ba = lst_BA[indexPath.row]
-        cell.lblSoBan.text=ba.soBan
-        cell.lblKV.text=ba.khuVuc
-        cell.lblTT.text=ba.thongTin
-        //let temp=ba.hinhAnh
-        //cell.ImgBA.image=UIImage(named : temp!)
+        // Configure the cell...
+        let kv = lst_KV[indexPath.row]
+        cell.lblMaKV.text = kv.maKV
+        cell.lblTenKV.text = kv.tenKV
+        cell.lblMoTa.text = kv.moTa
         return cell
     }
     
 
-    /*
+    
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
+    
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
+            let kv = lst_KV[indexPath.row]
+            kv.delete(kv: kv)
+            lst_KV.remove(at: indexPath.row) // Cập nhật data model
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.

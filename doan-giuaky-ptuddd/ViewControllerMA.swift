@@ -1,20 +1,31 @@
 //
-//  ViewControllerBA.swift
+//  ViewControllerMA.swift
 //  doan-giuaky-ptuddd
 //
-//  Created by Nguyen Nhan on 4/22/17.
+//  Created by Nguyen Nhan on 4/27/17.
 //  Copyright © 2017 Huynh Thanh Nhan. All rights reserved.
 //
 
 import UIKit
 
-class ViewControllerBA: UIViewController {
+class ViewControllerMA: UIViewController {
 
+    @IBAction func themMonAn(_ sender: Any) {
+        let ma = MonAn()
+        ma.maMA = txtMa.text
+        ma.tenMA = txtTen.text
+        ma.giaTien = txtGiaTien.text
+        ma.moTa = txtMoTa.text
+       
+        ma.insert(ma: ma)
+
+    }
     @IBOutlet weak var btnThem: UIButton!
-    @IBOutlet weak var imgBA: UIImageView!
-    @IBOutlet weak var txtTT: UITextField!
-    @IBOutlet weak var txtKV: UITextField!
-    @IBOutlet weak var txtSoBan: UITextField!
+    @IBOutlet weak var txtMoTa: UITextField!
+    @IBOutlet weak var txtGiaTien: UITextField!
+    @IBOutlet weak var txtTen: UITextField!
+    @IBOutlet weak var txtMa: UITextField!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,14 +38,6 @@ class ViewControllerBA: UIViewController {
     }
     
 
-    @IBAction func ThemBanAn(_ sender: Any) {
-        let ba = BanAn()
-        ba.soBan = txtSoBan.text
-        ba.khuVuc = txtKV.text
-        ba.thongTin = txtTT.text
-        ba.hinhAnh = "0"
-        ba.insert(ba: ba)
-    }
     /*
     // MARK: - Navigation
 
