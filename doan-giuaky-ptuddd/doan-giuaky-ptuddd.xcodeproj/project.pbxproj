@@ -8,10 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		1100038C1EB089CC00379CC9 /* BanAn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1100038B1EB089CC00379CC9 /* BanAn.swift */; };
+		110003941EB11F5500379CC9 /* TableViewControllerBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110003931EB11F5400379CC9 /* TableViewControllerBA.swift */; };
 		112A30ED1EA9B0AE008652AE /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 112A30EC1EA9B0AE008652AE /* img1.jpg */; };
 		119ABA9B1EB04A1700386C5E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 119ABA9A1EB04A1700386C5E /* libsqlite3.0.tbd */; };
-		119ABA9D1EB04CDC00386C5E /* QLQA.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 119ABA9C1EB04CDC00386C5E /* QLQA.sqlite */; };
 		119ABAA01EB04D6500386C5E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119ABA9F1EB04D6500386C5E /* Utils.swift */; };
+		11EABCF41EB1E3B900F6D2B7 /* TableViewControllerKV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EABCF31EB1E3B900F6D2B7 /* TableViewControllerKV.swift */; };
+		11EABCF61EB1E3E800F6D2B7 /* ViewControllerKV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EABCF51EB1E3E800F6D2B7 /* ViewControllerKV.swift */; };
+		11EABCF81EB1E64900F6D2B7 /* KhuVuc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EABCF71EB1E64900F6D2B7 /* KhuVuc.swift */; };
+		11EABCFA1EB1E6C600F6D2B7 /* TableViewCellKV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EABCF91EB1E6C600F6D2B7 /* TableViewCellKV.swift */; };
+		11EABCFC1EB2029300F6D2B7 /* TableViewCellMA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EABCFB1EB2029200F6D2B7 /* TableViewCellMA.swift */; };
+		11EABCFE1EB202C000F6D2B7 /* TableViewControllerMA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EABCFD1EB202C000F6D2B7 /* TableViewControllerMA.swift */; };
+		11EABD001EB202E600F6D2B7 /* ViewControllerMA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EABCFF1EB202E600F6D2B7 /* ViewControllerMA.swift */; };
+		11EABD021EB2080900F6D2B7 /* MonAn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EABD011EB2080900F6D2B7 /* MonAn.swift */; };
 		11EE42691EAA625000A88487 /* TableViewCellBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EE42681EAA625000A88487 /* TableViewCellBA.swift */; };
 		11EE426B1EAA627000A88487 /* TableViewControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EE426A1EAA627000A88487 /* TableViewControllerMain.swift */; };
 		11EE426F1EAA7E1000A88487 /* ViewControllerQuanLy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EE426E1EAA7E1000A88487 /* ViewControllerQuanLy.swift */; };
@@ -37,10 +45,19 @@
 
 /* Begin PBXFileReference section */
 		1100038B1EB089CC00379CC9 /* BanAn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanAn.swift; sourceTree = "<group>"; };
+		110003931EB11F5400379CC9 /* TableViewControllerBA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerBA.swift; sourceTree = "<group>"; };
 		112A30EC1EA9B0AE008652AE /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
 		119ABA9A1EB04A1700386C5E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
-		119ABA9C1EB04CDC00386C5E /* QLQA.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = QLQA.sqlite; sourceTree = "<group>"; };
 		119ABA9F1EB04D6500386C5E /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		11EABCF21EB1E02200F6D2B7 /* QLQA.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = QLQA.sqlite; sourceTree = "<group>"; };
+		11EABCF31EB1E3B900F6D2B7 /* TableViewControllerKV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerKV.swift; sourceTree = "<group>"; };
+		11EABCF51EB1E3E800F6D2B7 /* ViewControllerKV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerKV.swift; sourceTree = "<group>"; };
+		11EABCF71EB1E64900F6D2B7 /* KhuVuc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KhuVuc.swift; sourceTree = "<group>"; };
+		11EABCF91EB1E6C600F6D2B7 /* TableViewCellKV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellKV.swift; sourceTree = "<group>"; };
+		11EABCFB1EB2029200F6D2B7 /* TableViewCellMA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellMA.swift; sourceTree = "<group>"; };
+		11EABCFD1EB202C000F6D2B7 /* TableViewControllerMA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerMA.swift; sourceTree = "<group>"; };
+		11EABCFF1EB202E600F6D2B7 /* ViewControllerMA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMA.swift; sourceTree = "<group>"; };
+		11EABD011EB2080900F6D2B7 /* MonAn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonAn.swift; sourceTree = "<group>"; };
 		11EE42681EAA625000A88487 /* TableViewCellBA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellBA.swift; sourceTree = "<group>"; };
 		11EE426A1EAA627000A88487 /* TableViewControllerMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerMain.swift; sourceTree = "<group>"; };
 		11EE426E1EAA7E1000A88487 /* ViewControllerQuanLy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerQuanLy.swift; sourceTree = "<group>"; };
@@ -87,6 +104,13 @@
 				11EE426A1EAA627000A88487 /* TableViewControllerMain.swift */,
 				11EE426E1EAA7E1000A88487 /* ViewControllerQuanLy.swift */,
 				11EE42701EAA869E00A88487 /* ViewControllerBA.swift */,
+				110003931EB11F5400379CC9 /* TableViewControllerBA.swift */,
+				11EABCF31EB1E3B900F6D2B7 /* TableViewControllerKV.swift */,
+				11EABCF51EB1E3E800F6D2B7 /* ViewControllerKV.swift */,
+				11EABCF91EB1E6C600F6D2B7 /* TableViewCellKV.swift */,
+				11EABCFB1EB2029200F6D2B7 /* TableViewCellMA.swift */,
+				11EABCFD1EB202C000F6D2B7 /* TableViewControllerMA.swift */,
+				11EABCFF1EB202E600F6D2B7 /* ViewControllerMA.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -111,9 +135,11 @@
 		119ABA9E1EB04CFF00386C5E /* Global */ = {
 			isa = PBXGroup;
 			children = (
-				119ABA9C1EB04CDC00386C5E /* QLQA.sqlite */,
+				11EABCF21EB1E02200F6D2B7 /* QLQA.sqlite */,
 				119ABA9F1EB04D6500386C5E /* Utils.swift */,
 				1100038B1EB089CC00379CC9 /* BanAn.swift */,
+				11EABCF71EB1E64900F6D2B7 /* KhuVuc.swift */,
+				11EABD011EB2080900F6D2B7 /* MonAn.swift */,
 			);
 			name = Global;
 			sourceTree = "<group>";
@@ -258,7 +284,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				119ABA9D1EB04CDC00386C5E /* QLQA.sqlite in Resources */,
 				B47DCB361EA5205C00F783F2 /* LaunchScreen.storyboard in Resources */,
 				112A30ED1EA9B0AE008652AE /* img1.jpg in Resources */,
 				B47DCB331EA5205C00F783F2 /* Assets.xcassets in Resources */,
@@ -328,14 +353,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11EABCF61EB1E3E800F6D2B7 /* ViewControllerKV.swift in Sources */,
+				11EABCFC1EB2029300F6D2B7 /* TableViewCellMA.swift in Sources */,
 				11EE426B1EAA627000A88487 /* TableViewControllerMain.swift in Sources */,
+				110003941EB11F5500379CC9 /* TableViewControllerBA.swift in Sources */,
+				11EABCFE1EB202C000F6D2B7 /* TableViewControllerMA.swift in Sources */,
 				B47DCB2E1EA5205C00F783F2 /* ViewController.swift in Sources */,
 				11EE426F1EAA7E1000A88487 /* ViewControllerQuanLy.swift in Sources */,
 				119ABAA01EB04D6500386C5E /* Utils.swift in Sources */,
 				B47DCB2C1EA5205C00F783F2 /* AppDelegate.swift in Sources */,
 				11EE42691EAA625000A88487 /* TableViewCellBA.swift in Sources */,
 				1100038C1EB089CC00379CC9 /* BanAn.swift in Sources */,
+				11EABCF81EB1E64900F6D2B7 /* KhuVuc.swift in Sources */,
+				11EABCF41EB1E3B900F6D2B7 /* TableViewControllerKV.swift in Sources */,
 				11EE42711EAA869E00A88487 /* ViewControllerBA.swift in Sources */,
+				11EABD001EB202E600F6D2B7 /* ViewControllerMA.swift in Sources */,
+				11EABCFA1EB1E6C600F6D2B7 /* TableViewCellKV.swift in Sources */,
+				11EABD021EB2080900F6D2B7 /* MonAn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@ import FMDB
 import UIKit
 
 class BanAn : NSObject {
-    var soBan:Int?
+    var soBan:String?
     var khuVuc:String?
     var thongTin:String?
     var hinhAnh:String?
@@ -24,16 +24,31 @@ class BanAn : NSObject {
         if resultSet != nil {
             while resultSet.next() {
                 let ba = BanAn()
-                //ba.soBan = Int(resultSet.string(forColumn: "SoBan"))
+                ba.soBan = resultSet.string(forColumn: "SoBan")
                 ba.khuVuc = resultSet.string(forColumn: "KhuVuc")
                 ba.thongTin = resultSet.string(forColumn: "ThongTin")
-                //ba.hinhAnh = resultSet.string(forColumn: "HinhAnh")
+                ba.hinhAnh = resultSet.string(forColumn: "HinhAnh")
                 personMArray.add(ba)
             }
         }
         Utils.database!.close()
         return NSArray(array: personMArray)
     }
+    
+    func insert(ba:BanAn) {
+        Utils.database!.open()
+        let sql = "INSERT INTO BanAn (SoBan,KhuVuc,ThongTin,HinhAnh) VALUES (?, ?, ?, ?)"
+        Utils.database!.executeUpdate(sql, withArgumentsIn: [ba.soBan!,ba.khuVuc!,ba.thongTin!,ba.hinhAnh!])
+        Utils.database!.close()
+    }
+    func delete(ba:BanAn) {
+        Utils.database!.open()
+        let sql = "DELETE FROM BanAn WHERE SoBan = ?"
+        Utils.database!.executeUpdate(sql, withArgumentsIn: [ba.soBan!])
+        Utils.database!.close()
+    }
+
+    
 
 }
 

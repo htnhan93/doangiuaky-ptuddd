@@ -1,20 +1,19 @@
 //
-//  ViewControllerBA.swift
+//  ViewControllerKV.swift
 //  doan-giuaky-ptuddd
 //
-//  Created by Nguyen Nhan on 4/22/17.
+//  Created by Nguyen Nhan on 4/27/17.
 //  Copyright © 2017 Huynh Thanh Nhan. All rights reserved.
 //
 
 import UIKit
 
-class ViewControllerBA: UIViewController {
+class ViewControllerKV: UIViewController {
 
     @IBOutlet weak var btnThem: UIButton!
-    @IBOutlet weak var imgBA: UIImageView!
-    @IBOutlet weak var txtTT: UITextField!
-    @IBOutlet weak var txtKV: UITextField!
-    @IBOutlet weak var txtSoBan: UITextField!
+    @IBOutlet weak var txtMoTa: UITextField!
+    @IBOutlet weak var txtTenKV: UITextField!
+    @IBOutlet weak var txtMaKV: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,15 +25,16 @@ class ViewControllerBA: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func themKhuVuc(_ sender: Any) {
+        let kv = KhuVuc()
+        kv.maKV = txtMaKV.text
+        kv.tenKV = txtTenKV.text
+        kv.moTa = txtMoTa.text
+        //kv.hinhAnh = "0"
+        kv.insert(kv: kv)
 
-    @IBAction func ThemBanAn(_ sender: Any) {
-        let ba = BanAn()
-        ba.soBan = txtSoBan.text
-        ba.khuVuc = txtKV.text
-        ba.thongTin = txtTT.text
-        ba.hinhAnh = "0"
-        ba.insert(ba: ba)
     }
+
     /*
     // MARK: - Navigation
 

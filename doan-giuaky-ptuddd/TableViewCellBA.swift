@@ -10,6 +10,10 @@ import UIKit
 
 class TableViewCellBA: UITableViewCell {
 
+    @IBOutlet weak var imgBA2: UIImageView!
+    @IBOutlet weak var lblKV2: UILabel!
+    @IBOutlet weak var lblTT2: UILabel!
+    @IBOutlet weak var lblBA2: UILabel!
     @IBOutlet weak var ImgBA: UIImageView!
     @IBOutlet weak var lblKV: UILabel!
     @IBOutlet weak var lblTT: UILabel!
